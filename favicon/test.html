@@ -1,0 +1,25 @@
+<html>
+<head>
+<style>
+    img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
+</style>    
+</head>
+<body>
+<img data-src="https://albacadabra2018.com/image/webhead.jpg" alt="test image">
+<script>
+    forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
+</script>
+</body>
+</html>

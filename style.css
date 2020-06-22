@@ -1,0 +1,113 @@
+body,h1,h2,h3,h4,h5{font-family:poppins,sans-serif}
+body{font-size:16px}
+
+img {
+    margin-bottom:-8px
+}
+
+.s3:hover   {
+    background-color:grey;
+}
+
+.kabum	{
+	height:96px;
+	max-width:24vw;
+	max-height:24vw;
+	display:block;
+	filter:brightness(10);
+	overflow:hidden
+}
+
+.glass	{
+	height:96px;
+	max-width:24vw;
+	max-height:24vw;
+	display:block;
+	filter:brightness(10);
+	overflow:hidden
+}
+
+.criterion	{
+	height:96px;
+	max-width:24vw;
+	max-height:24vw;
+	display:block;
+	filter:brightness(10);
+	overflow:hidden
+}
+
+.starts	{
+	height:96px;
+	max-width:24vw;
+	max-height:24vw;
+	display:block;
+	filter:brightness(10);
+	overflow:hidden
+}
+
+.dot	{
+	cursor:pointer;
+	height:15px;
+	width:15px;
+	margin:0 2px;
+	background-color:#f1f2f6;
+	border-radius:40%;
+	display:inline-block;
+	transition:background-color .6s ease
+}
+
+.active,.dot:hover	{
+	background-color:#b68f1b;
+}
+
+#myProgress	{
+	width:100%;
+	height:3px;
+	position:relative;
+	background-color:transparent;
+}
+
+#myBar	{
+	background-color:#fff;
+	height:3px;
+	position:absolute;
+}
+
+#loader-wrapper	{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:#222;
+	z-index:1000
+}
+
+#loader	{
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:1001;
+	animation:fading 3s infinite;
+}
+
+@keyframes fading{0%{opacity:1}25%{opacity:.25}50%{opacity:.75}75%{opacity:.25}100%{opacity:1}}
+
+.spin	{
+	border:4px solid;
+	opacity:.8;
+	border-radius:50%;
+	width:256px;
+	height:256px;
+	border-right-color:cyan;
+	border-left-color:#f4a460;
+	border-top-color:transparent;
+	border-bottom-color:transparent;
+	animation:rotate 3s infinite;
+	text-align:center;
+}
+
+.aspin	{
+	animation:arotate 3s infinite;
+}
+@keyframes rotate{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+@keyframes arotate{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}
