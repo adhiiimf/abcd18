@@ -1,0 +1,76 @@
+.scroll-fade{
+    opacity:0;
+    transition:all 1s ease-out;
+}
+
+.scrollin-fade{
+    opacity:1;
+}
+
+.scroll-up {
+    transform: translateY(30px);
+    transition:all 1s ease-out;
+}
+
+.scrollin-up {
+    transform: translateY(0px);
+}
+
+.scroll-down {
+    transform: translateY(-30px);
+    transition:all 1s ease-out;
+}
+
+.scrollin-down {
+    transform: translateY(0px);
+}
+
+.scroll-left {
+    transform: translateX(30px);
+    transition:all 1s ease-out;
+}
+
+.scrollin-left {
+    transform: translateX(0px);
+}
+
+.scroll-right {
+    transform: translateX(-30px);
+    transition:all 1s ease-out;
+}
+
+.scrollin-right {
+    transform: translateX(0px);
+}
+
+.scroll-pop {
+    transition:all 1s ease-out;
+}
+
+.scrollin-pop{
+    animation: pop 0.3s linear 1;
+}
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+}
+
+.navbar {
+    border-radius:0px;
+}
+.scroll-color1{
+    background-color:#deba5b;
+    transition:1.3s;
+}
+.scrollin-color1{
+    background-color:#2e303e;
+    transition:1.3s;
+}
+.scroll-color2{
+    background-color:#2e303e;
+    transition:1.3s;
+}
+.scrollin-color2{
+    background-color:#deba5b;
+    transition:1.3s;
+}
